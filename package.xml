@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.6" version="2.0"
+	xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+	<name>cpDatePickerWidgetPlugin</name>
+	<channel>plugins.symfony-project.org</channel>
+	<summary>A form widget for date input, based on the DatePicker jQuery puglin</summary>
+	<description>A more elaborate description of your plugin</description>
+	<lead>
+		<name>Dzango SARL</name>
+		<user>dzango</user>
+		<email>info@dzango.com</email>
+		<active>yes</active>
+	</lead>
+	<date>2011-05-01</date>
+	<time>12:00:00</time>
+	<version>
+		<release>0.1.0</release>
+		<api>0.1.0</api>
+	</version>
+	<stability>
+		<release>alpha</release>
+		<api>alpha</api>
+	</stability>
+	<license uri="http://www.symfony-project.org/license">MIT license</license>
+	<notes>-</notes>
+	<contents>
+		<dir name="/">
+			<file role="data" name="README" />
+			<file role="data" name="LICENSE" />
+			<dir name="lib">
+				<dir name="widget">
+					<file role="data" name="cpDatePickerWidget.php" />
+				</dir>
+			</dir>
+			<dir name="web">
+				<dir name="css">
+					<file role="data" name="datePicker.css" />
+				</dir>
+				<dir name="js">
+					<file role="data" name="date_fr.js" />
+					<file role="data" name="date.js" />
+					<file role="data" name="jquery.datePicker.js" />
+				</dir>
+			</dir>
+		</dir>
+	</contents>
+	<dependencies>
+		<required>
+			<php>
+				<min>5.1.0</min>
+			</php>
+			<pearinstaller>
+				<min>1.4.1</min>
+			</pearinstaller>
+			<package>
+				<name>symfony</name>
+				<channel>pear.symfony-project.com</channel>
+				<min>1.4.0</min>
+				<max>1.5.0</max>
+				<exclude>1.5.0</exclude>
+			</package>
+		</required>
+	</dependencies>
+	<phprelease />
+	<changelog>
+		<release>
+			<version>
+				<release>0.1.0</release>
+				<api>0.1.0</api>
+			</version>
+			<stability>
+				<release>alpha</release>
+				<api>alpha</api>
+			</stability>
+			<date>2011-05-01</date>
+			<license uri="http://www.symfony-project.org/license">MIT license</license>
+			<notes>
+        First public release
+      </notes>
+		</release>
+	</changelog>
+</package>

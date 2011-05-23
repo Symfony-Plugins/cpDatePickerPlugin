@@ -59,12 +59,12 @@ EOF
   }
   
   public function getJavascripts() {
-    return array('/cpDatePickerWidgetPlugin/js/date.js',
-                 '/cpDatePickerWidgetPlugin/js/date_' . $this->getOption('culture') . '.js',
-                 '/cpDatePickerWidgetPlugin/js/jquery.datePicker.js');
+    return array('/cpDatePickerPlugin/js/date.js',
+                 '/cpDatePickerPlugin/js/date_' . $this->getOption('culture') . '.js',
+                 '/cpDatePickerPlugin/js/jquery.datePicker.js');
   }
   
   public function getStylesheets() {
-    return array('/cpDatePickerWidgetPlugin/css/datePicker.css' => 'all');
+    return array('/cpDatePickerPlugin/css/datePicker.css' => 'all');
   }
 }

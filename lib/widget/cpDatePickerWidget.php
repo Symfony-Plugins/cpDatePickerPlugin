@@ -19,6 +19,7 @@ class cpDatePickerWidget extends sfWidgetFormInput {
     $this->addOption('startDate', '1901-01-01');
     $this->addOption('endDate');
     $this->addOption('clickInput', true);
+    $this->addOption('noscript', false);
     $this->addOption('template', <<<EOF
 %widget%
 <script type="text/javascript">
@@ -48,14 +49,16 @@ EOF
   public function render($name, $value = null, $attributes = array(), $errors = array()) {
     $id = $this->generateId($name);
 
-    return strtr($this->getOption('template'), array(
-             '%widget%' => parent::render($name, $value, $attributes, $errors),
-             '%id%' => $id,
-             '%date_format%' => $this->getOption('dateFormat'),
-             '%start_date%' => $this->getOption('startDate'),
-             '%end_date%' => $this->getOption('endDate'),
-             '%click_input%' => $this->getOption('clickInput')
-            ));
+    return $this->getOption('noscript') ? 
+             parent::render($name, $value, $attributes, $errors) :
+             strtr($this->getOption('template'), array(
+               '%widget%' => parent::render($name, $value, $attributes, $errors),
+               '%id%' => $id,
+               '%date_format%' => $this->getOption('dateFormat'),
+               '%start_date%' => $this->getOption('startDate'),
+               '%end_date%' => $this->getOption('endDate'),
+               '%click_input%' => $this->getOption('clickInput')
+             ));
   }
   
   public function getJavascripts() {

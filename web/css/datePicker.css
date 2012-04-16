@@ -129,12 +129,12 @@ div.dp-popup td.disabled {
 }
 
 a.dp-choose-date {
-  float: left;
+  float: none;
   width: 16px;
   height: 16px;
   padding: 0;
   margin: 5px 3px 0;
-  display: block;
+  display: inline-block;
   text-indent: -2000px;
   overflow: hidden;
   background: url(../images/calendar.png) no-repeat; 

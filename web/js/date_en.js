@@ -10,4 +10,4 @@ jQuery.dpText = {
     TEXT_CLOSE       : 'Close',
     TEXT_CHOOSE_DATE : 'Choose date',
     HEADER_FORMAT    : 'mmmm yyyy'
-}
+};

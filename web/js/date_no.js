@@ -16,4 +16,4 @@ $.dpText = {
     TEXT_CLOSE			:	'Lukk',
     TEXT_CHOOSE_DATE	:	'Velg dato',
     HEADER_FORMAT       :	'mmmm yyyy'
-}
+};
